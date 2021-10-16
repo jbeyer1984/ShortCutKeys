@@ -1,0 +1,16 @@
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+.fields {
+  width: 460px;
+}
+.fields span {
+  float: left;
+}
+/*# sourceMappingURL=main.css.map */
