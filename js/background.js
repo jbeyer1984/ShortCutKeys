@@ -2,56 +2,63 @@ chrome.runtime.onInstalled.addListener(function() {
     chrome.storage.sync.set({
         toggleSitesActive: true,
         toggleSitesList: "google.de",
+
         searchLookup: [
             {
                 key: 'mp',
-                // value: 'meine Programme'
-                value: 'insurance.html'
+                value: 'programme'
             },
             {
                 key: 'ms',
-                // value: 'meine Standorte'
-                value: 'index.html'
+                value: 'standorte'
+            },
+            {
+                key: 'me',
+                value: 'mediathek'
             },
             {
                 key: 'ma',
-                value: 'mandant.html'
+                value: 'administration/clients'
             },
             {
                 key: 'cc',
-                value: 'contentreator.html'
+                value: 'contentCreator'
             },
             {
                 key: 'so',
-                value: 'screensonline.html'
+                value: 'administration/screenActivity'
             },
             {
                 key: 'su',
-                value: 'screenuebersicht.html'
+                value: 'administration/screenOverview'
             },
             {
                 key: 'ad',
-                value: 'administration.html'
+                value: 'administration'
             },
             {
                 key: 'be',
-                value: 'benutzer.html'
+                value: 'administration/specificUserList'
             },
             {
                 key: 'ei',
-                value: 'einstellung.html'
+                value: 'settings/user'
             },
             {
                 key: 'st',
-                value: 'standortverwaltung.html'
+                value: 'settings/locations'
             },
             {
                 key: 'mt',
-                value: 'meinetags.html'
+                value: 'settings/tags'
+            },
+            {
+                key: 'qe',
+                value: 'administration/queue'
             },
             {
                 key: 'pl',
-                value: 'playercontenterror.html'
+                value: 'administration/player/download/error/dashboard'
             }
         ]
     }, function() {});
